@@ -1,0 +1,174 @@
+warning: LF will be replaced by CRLF in js/contact_me.min.js.
+The file will have its original line endings in your working directory.
+[1mdiff --git a/img/profile.png b/img/profile.png[m
+[1mindex b3f0fda..fa6d882 100644[m
+Binary files a/img/profile.png and b/img/profile.png differ
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 03980ac..317abc9 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -142,13 +142,15 @@[m
+       <hr class="star-light mb-5">[m
+       <div class="row">[m
+         <div class="col-lg-4 ml-auto">[m
+[31m-          <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the[m
+[31m-            complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy[m
+[31m-            customization.</p>[m
+[32m+[m[32m          <p class="lead">Mauris tristique velit at euismod dictum. Morbi a vehicula dolor. Morbi quam diam, sodales[m
+[32m+[m[32m            non nunc eu, ornare egestas nunc. Donec blandit libero neque, semper pellentesque eros ornare id. Nulla ex[m
+[32m+[m[32m            sem, varius id neque eget, scelerisque ultrices libero. Etiam faucibus nulla eu ante consectetur molestie.</p>[m
+         </div>[m
+         <div class="col-lg-4 mr-auto">[m
+[31m-          <p class="lead">Whether you're a student looking to showcase your work, a professional looking to attract[m
+[31m-            clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>[m
+[32m+[m[32m          <p class="lead">Sed posuere molestie dolor. Mauris consectetur, ante sodales aliquam venenatis, orci libero[m
+[32m+[m[32m            mollis nisi, id sagittis magna tellus vel elit. Ut at enim dignissim tortor efficitur lobortis sed quis[m
+[32m+[m[32m            leo. Pellentesque hendrerit at orci non vehicula. Fusce facilisis id sapien nec rutrum. Nulla mollis quis[m
+[32m+[m[32m            nulla id malesuada.</p>[m
+         </div>[m
+       </div>[m
+     </div>[m
+[36m@@ -166,40 +168,40 @@[m
+           <form name="sentMessage" id="contactForm" novalidate="novalidate">[m
+             <div class="control-group">[m
+               <div class="form-group floating-label-form-group controls mb-0 pb-2">[m
+[31m-                <label>Name</label>[m
+[31m-                <input class="form-control" id="name" type="text" placeholder="Name" required="required"[m
+[31m-                  data-validation-required-message="Please enter your name.">[m
+[32m+[m[32m                <label>Nome</label>[m
+[32m+[m[32m                <input class="form-control" id="name" type="text" placeholder="Nome" required="required"[m
+[32m+[m[32m                  data-validation-required-message="Insira seu nome.">[m
+                 <p class="help-block text-danger"></p>[m
+               </div>[m
+             </div>[m
+             <div class="control-group">[m
+               <div class="form-group floating-label-form-group controls mb-0 pb-2">[m
+[31m-                <label>Email Address</label>[m
+[31m-                <input class="form-control" id="email" type="email" placeholder="Email Address" required="required"[m
+[31m-                  data-validation-required-message="Please enter your email address.">[m
+[32m+[m[32m                <label>E-mail</label>[m
+[32m+[m[32m                <input class="form-control" id="email" type="email" placeholder="E-mail" required="required"[m
+[32m+[m[32m                  data-validation-required-message="Insira seu e-mail.">[m
+                 <p class="help-block text-danger"></p>[m
+               </div>[m
+             </div>[m
+             <div class="control-group">[m
+               <div class="form-group floating-label-form-group controls mb-0 pb-2">[m
+[31m-                <label>Phone Number</label>[m
+[31m-                <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required"[m
+[31m-                  data-validation-required-message="Please enter your phone number.">[m
+[32m+[m[32m                <label>Telefone</label>[m
+[32m+[m[32m                <input class="form-control" id="phone" type="tel" placeholder="Telefone" required="required"[m
+[32m+[m[32m                  data-validation-required-message="Insira o número do seu telefone.">[m
+                 <p class="help-block text-danger"></p>[m
+               </div>[m
+             </div>[m
+             <div class="control-group">[m
+               <div class="form-group floating-label-form-group controls mb-0 pb-2">[m
+[31m-                <label>Message</label>[m
+[31m-                <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required"[m
+[31m-                  data-validation-required-message="Please enter a message."></textarea>[m
+[32m+[m[32m                <label>Mensagem</label>[m
+[32m+[m[32m                <textarea class="form-control" id="message" rows="5" placeholder="Mensagem" required="required"[m
+[32m+[m[32m                  data-validation-required-message="Insira a mensagem desejada."></textarea>[m
+                 <p class="help-block text-danger"></p>[m
+               </div>[m
+             </div>[m
+             <br>[m
+             <div id="success"></div>[m
+             <div class="form-group">[m
+[31m-              <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>[m
+[32m+[m[32m              <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Enviar</button>[m
+             </div>[m
+           </form>[m
+         </div>[m
+[1mdiff --git a/js/contact_me.js b/js/contact_me.js[m
+[1mindex 6e91590..20d832c 100644[m
+[1m--- a/js/contact_me.js[m
+[1m+++ b/js/contact_me.js[m
+[36m@@ -1,11 +1,11 @@[m
+[31m-$(function() {[m
+[32m+[m[32m$(function () {[m
+ [m
+   $("#contactForm input,#contactForm textarea").jqBootstrapValidation({[m
+     preventSubmit: true,[m
+[31m-    submitError: function($form, event, errors) {[m
+[32m+[m[32m    submitError: function ($form, event, errors) {[m
+       // additional error messages or events[m
+     },[m
+[31m-    submitSuccess: function($form, event) {[m
+[32m+[m[32m    submitSuccess: function ($form, event) {[m
+       event.preventDefault(); // prevent default submit behaviour[m
+       // get values from FORM[m
+       var name = $("input#name").val();[m
+[36m@@ -29,47 +29,47 @@[m [m$(function() {[m
+           message: message[m
+         },[m
+         cache: false,[m
+[31m-        success: function() {[m
+[32m+[m[32m        success: function () {[m
+           // Success message[m
+           $('#success').html("<div class='alert alert-success'>");[m
+           $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")[m
+             .append("</button>");[m
+           $('#success > .alert-success')[m
+[31m-            .append("<strong>Your message has been sent. </strong>");[m
+[32m+[m[32m            .append("<strong>Sua mensagem foi enviada. </strong>");[m
+           $('#success > .alert-success')[m
+             .append('</div>');[m
+           //clear all fields[m
+           $('#contactForm').trigger("reset");[m
+         },[m
+[31m-        error: function() {[m
+[32m+[m[32m        error: function () {[m
+           // Fail message[m
+           $('#success').html("<div class='alert alert-danger'>");[m
+           $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")[m
+             .append("</button>");[m
+[31m-          $('#success > .alert-danger').append($("<strong>").text("Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!"));[m
+[32m+[m[32m          $('#success > .alert-danger').append($("<strong>").text("Desculpe " + firstName + ", parece que nosso servidor de e-mail não está funcionando. Por favor, tente novamente mais tarde"));[m
+           $('#success > .alert-danger').append('</div>');[m
+           //clear all fields[m
+           $('#contactForm').trigger("reset");[m
+         },[m
+[31m-        complete: function() {[m
+[31m-          setTimeout(function() {[m
+[32m+[m[32m        complete: function () {[m
+[32m+[m[32m          setTimeout(function () {[m
+             $this.prop("disabled", false); // Re-enable submit button when AJAX call is complete[m
+           }, 1000);[m
+         }[m
+       });[m
+     },[m
+[31m-    filter: function() {[m
+[32m+[m[32m    filter: function () {[m
+       return $(this).is(":visible");[m
+     },[m
+   });[m
+ [m
+[31m-  $("a[data-toggle=\"tab\"]").click(function(e) {[m
+[32m+[m[32m  $("a[data-toggle=\"tab\"]").click(function (e) {[m
+     e.preventDefault();[m
+     $(this).tab("show");[m
+   });[m
+ });[m
+ [m
+ /*When clicking on Full hide fail/success boxes */[m
+[31m-$('#name').focus(function() {[m
+[32m+[m[32m$('#name').focus(function () {[m
+   $('#success').html('');[m
+[31m-});[m
+[32m+[m[32m});[m
+\ No newline at end of file[m
+[1mdiff --git a/js/contact_me.min.js b/js/contact_me.min.js[m
+[1mindex fce5be1..fe29c2b 100644[m
+[1m--- a/js/contact_me.min.js[m
+[1m+++ b/js/contact_me.min.js[m
+[36m@@ -4,4 +4,4 @@[m
+  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)[m
+  */[m
+ [m
+[31m-$(function(){$("#contactForm input,#contactForm textarea").jqBootstrapValidation({preventSubmit:!0,submitError:function(t,e,s){},submitSuccess:function(t,e){e.preventDefault();var s=$("input#name").val(),a=$("input#email").val(),n=$("input#phone").val(),c=$("textarea#message").val(),i=s;0<=i.indexOf(" ")&&(i=s.split(" ").slice(0,-1).join(" ")),$this=$("#sendMessageButton"),$this.prop("disabled",!0),$.ajax({url:"././mail/contact_me.php",type:"POST",data:{name:s,phone:n,email:a,message:c},cache:!1,success:function(){$("#success").html("<div class='alert alert-success'>"),$("#success > .alert-success").html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>"),$("#success > .alert-success").append("<strong>Your message has been sent. </strong>"),$("#success > .alert-success").append("</div>"),$("#contactForm").trigger("reset")},error:function(){$("#success").html("<div class='alert alert-danger'>"),$("#success > .alert-danger").html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>"),$("#success > .alert-danger").append($("<strong>").text("Sorry "+i+", it seems that my mail server is not responding. Please try again later!")),$("#success > .alert-danger").append("</div>"),$("#contactForm").trigger("reset")},complete:function(){setTimeout(function(){$this.prop("disabled",!1)},1e3)}})},filter:function(){return $(this).is(":visible")}}),$('a[data-toggle="tab"]').click(function(t){t.preventDefault(),$(this).tab("show")})}),$("#name").focus(function(){$("#success").html("")});[m
+\ No newline at end of file[m
+[32m+[m[32m$(function(){$("#contactForm input,#contactForm textarea").jqBootstrapValidation({preventSubmit:!0,submitError:function(e,t,s){},submitSuccess:function(e,t){t.preventDefault();var s=$("input#name").val(),a=$("input#email").val(),n=$("input#phone").val(),c=$("textarea#message").val(),i=s;0<=i.indexOf(" ")&&(i=s.split(" ").slice(0,-1).join(" ")),$this=$("#sendMessageButton"),$this.prop("disabled",!0),$.ajax({url:"././mail/contact_me.php",type:"POST",data:{name:s,phone:n,email:a,message:c},cache:!1,success:function(){$("#success").html("<div class='alert alert-success'>"),$("#success > .alert-success").html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>"),$("#success > .alert-success").append("<strong>Sua mensagem foi enviada. </strong>"),$("#success > .alert-success").append("</div>"),$("#contactForm").trigger("reset")},error:function(){$("#success").html("<div class='alert alert-danger'>"),$("#success > .alert-danger").html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>"),$("#success > .alert-danger").append($("<strong>").text("Desculpe "+i+", parece que nosso servidor de e-mail não está funcionando. Por favor, tente novamente mais tarde")),$("#success > .alert-danger").append("</div>"),$("#contactForm").trigger("reset")},complete:function(){setTimeout(function(){$this.prop("disabled",!1)},1e3)}})},filter:function(){return $(this).is(":visible")}}),$('a[data-toggle="tab"]').click(function(e){e.preventDefault(),$(this).tab("show")})}),$("#name").focus(function(){$("#success").html("")});[m
+\ No newline at end of file[m
