@@ -12,10 +12,10 @@ $phone = strip_tags(htmlspecialchars($_POST['phone']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
 
 // Create the email and send the message
-$to = "contato@varoniacessorios.com.br";
+$to = "varoniacessorios@gmail.com";
 $subject = "Novo contato recebido:  $name";
 $body = "Você recebeu uma nova mensagem do site Varoni.\n\n"."Estes são os detalhes do contato:\n\Nome: $name\n\nE-mail: $email\n\nFone: $phone\n\nMensagem:\n$message";
-$header = "From: nao_responda@varoniacessorios.com.br\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
+$header = "From: varoniacessorios@gmail.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $header .= "Reply-To: $email";	
 
 if(!mail($to, $subject, $body, $header))
